@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 5 - Mikolaj Czaja</title>
+    <script language="JavaScript">
+        function WinOpen_Czaja_grafika1() {
+            let okno = window.open("", "grafika1","width=350,height=350,top=50,left=50");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600" width="300"><br>
+                    <p style="color:red;">Kotek sobie siedzi</p>
+                </body></html>
+            `);
+        }
+
+        function WinOpen_Czaja_grafika2() {
+            let okno = window.open("", "grafika2","width=350,height=350,top=100,left=450");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=600" width="300"><br>
+                    <p style="color:green;">Pies sie usmiecha</p>
+                </body></html>
+            `);
+        }
+
+        function WinOpen_Czaja_grafika3() {
+            let okno = window.open("", "grafika3","width=350,height=350,top=300,left=50");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1617957741648-064d3d5ee2b1?w=600" width="300"><br>
+                    <p style="color:blue;">Foka zyje</p>
+                </body></html>
+            `);
+        }
+
+        function WinOpen_Czaja_grafika4() {
+            let okno = window.open("", "grafika4","width=350,height=350,top=300,left=450");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1552410260-0fd9b577afa1?w=600" width="300"><br>
+                    <p style="color:orange;">Niedźwiedz lezy</p>
+                </body></html>
+            `);
+        }
+
+        function okno_zamknij_Czaja() {
+            window.close();
+        }
+    </script>
+</head>
+<body style="text-align:center; font-family:Arial;">
+    <h2 style="color:green;">Mikolaj Czaja, klasa 3F, nr 4</h2>
+    <h3 style="color:red;">Obliczamy układ 1</h3>
+    <p>historia grafikowa:</p>
+    <button onclick="WinOpen_Czaja_grafika1()">Grafika 1</button>
+    <button onclick="WinOpen_Czaja_grafika2()">Grafika 2</button>
+    <button onclick="WinOpen_Czaja_grafika3()">Grafika 3</button>
+    <button onclick="WinOpen_Czaja_grafika4()">Grafika 4</button>
+    <br><br>
+    <button onclick="okno_zamknij_Czaja()">Zamknij okno</button>
+</body>
+</html>
